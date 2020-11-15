@@ -116,14 +116,14 @@ console.log(a.user); //undefined
 ### 情况三：使用 apply 或 call 调用
 apply、call、bind都是可以改变this指向的函数对象的方法，只不过用法不同
 ```js
-　var x = 0;
-　　function test(){
-　　　　alert(this.x);
-　　}
-　　var o={};
-　　o.x = 1;
-　　o.m = test;
-　　o.m.apply(); //0
+    var x = 0
+    function test(){
+        alert(this.x);
+    }
+    var o={};
+    o.x = 1;
+    o.m = test;
+    o.m.apply(); //0
 ```
 apply()的参数为空时，默认调用全局对象。因此，这时的运行结果为0，证明this指的是全局对象。
 ```js
