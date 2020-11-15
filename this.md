@@ -4,8 +4,8 @@ title: Another page
 description: This is just another page
 ---
 
-## Welcome to another page
+## this 指向
 
-_yay_
+
 
 [back](./)
